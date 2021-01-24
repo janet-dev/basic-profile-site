@@ -1,0 +1,112 @@
+/* CSS for basic Profile Site */
+
+/* Making the site more responsive */
+.container{
+    width: 90%;
+    margin: auto;
+}
+/* Imported Google font */
+body{
+    font-family: 'BioRhyme', serif;
+}
+
+/* Removing the bullet points from the navigation list & indenting slightly */
+.main-nav{
+    list-style: none;
+    padding: 10;
+}
+
+/* Displaying the navigation links horizontally with a little spacing between */
+.main-nav li{
+    display: inline-block;
+    padding: 5px;
+}
+
+/* Index page header background is black, contents are centralised with a little aesthetic padding*/
+.header-index{
+    font-family: 'Chilanka', cursive;
+    background-color: black;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    color: white;
+    text-align: center;
+}
+
+/* Used Flexbox to layout the 3 photos equally spaced and centralised horizontally */
+.flexContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+.flexItemA{
+    padding: 10px;
+    flex: 33%;
+}
+.flexItemB{
+    padding: 10px;
+    flex: 33%;
+}
+.flexItemC{
+    padding: 10px;
+    flex: 33%;
+}
+/* Responsive layout - makes a 1 column layout instead of a 3 column layout */
+@media (max-width: 800px) {
+    .flexContainer {
+      flex-direction: column;
+    }
+  }
+
+/* Used block formatting to layout the 2 text sections horizonally & equally spaced */
+.block{
+    display: inline-block;
+    vertical-align: middle;
+    width: 35%;
+    margin-left: 100px;
+    border: 1px;
+    padding: 10px;
+}
+
+
+/* Page 2 header background is a free image from unsplash.com */
+.header-page2{
+    background-image: url('../images/backgnd.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: 'BioRhyme', serif;
+    background-color: black;
+    padding: 30px;
+    color: white;
+}
+
+/* Centralising the heading and associated video */
+.video{
+    text-align: center;
+}
+
+/* Centralising the table with some padding*/
+table{
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid darkgrey;
+}
+/* Adding alternate striped rows */
+.stripe{
+    background-color: black;
+    color: white;
+}
+/* Centralised text */
+td{
+    text-align: center;
+}
+
+/* Footer background is black, contents are centralised with a little aesthetic padding*/
+footer{
+    background-color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    text-align: center;
+}
